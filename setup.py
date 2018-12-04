@@ -5,9 +5,7 @@ import re
 import sys
 
 
-v = open(os.path.join(os.path.dirname(__file__), 'alembic', '__init__.py'))
-VERSION = re.compile(r".*__version__ = '(.*?)'", re.S).match(v.read()).group(1)
-v.close()
+VERSION = '1.0.5+yoyo'
 
 
 readme = os.path.join(os.path.dirname(__file__), 'README.rst')

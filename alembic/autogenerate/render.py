@@ -534,6 +534,9 @@ def _render_column(column, autogen_context):
     if column.nullable is not None:
         opts.append(("nullable", column.nullable))
 
+    if column.info is not None:
+        opts.append(("info", column.info))
+
     if column.system:
         opts.append(("system", column.system))
 
